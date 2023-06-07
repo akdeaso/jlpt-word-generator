@@ -6,7 +6,7 @@ This is a simple JLPT Word Generator built with React, Vite, and TailwindCSS. Th
 
 To install and run this application locally, follow these steps:
 
-1. Clone this repository using `git clone https://github.com/example/japanese-vocabulary-app.git`.
+1. Clone this repository using `git clone https://github.com/akdeaso/jlpt-word-generator.git`.
 2. Navigate to the project directory using `cd japanese-vocabulary-app`.
 3. Install dependencies using `npm install`.
 4. Start the application using `npm run dev`.
