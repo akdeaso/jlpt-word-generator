@@ -1,6 +1,6 @@
 # JLPT Word Generator
 
-This is a simple JLPT Word Generator built with React, Vite, and TailwindCSS. The application fetches random Japanese words from the JLPT (Japanese Language Proficiency Test) API, which includes the word in kanji, its furigana reading, and its English meaning. The fetched word is displayed in a centered container, with the word, furigana, meaning and JLPT level. A "Generate New Word" button is also included to generate a new random word on demand.
+This is a simple JLPT Word Generator built with React, Vite, and TailwindCSS. The application fetches random Japanese words from the JLPT (Japanese Language Proficiency Test) API, which includes the word in kanji, its furigana reading, its meaning, and JLPT level. The fetched word is displayed in a centered container, with the word, furigana, meaning and JLPT level. A "Generate New Word" button is also included to generate a new random word on demand.
 
 ## Installation
 
