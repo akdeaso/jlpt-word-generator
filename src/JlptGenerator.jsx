@@ -5,17 +5,23 @@ const RandomJapaneseWord = () => {
   const [word, setWord] = useState({});
   const [level, setLevel] = useState("");
   const [isLevelSelected, setIsLevelSelected] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     if (level) {
+      setIsLoading(true);
       axios
         .get(
           `https://jlpt-vocab-api.vercel.app/api/words/random?level=${level}`
         )
         .then((response) => {
           setWord(response.data);
+          setIsLoading(false);
         })
-        .catch((error) => console.log(error));
+        .catch((error) => {
+          console.log(error);
+          setIsLoading(false);
+        });
     }
   }, [level]);
 
@@ -30,12 +36,17 @@ const RandomJapaneseWord = () => {
   };
 
   const handleNewWordClick = () => {
+    setIsLoading(true);
     axios
       .get(`https://jlpt-vocab-api.vercel.app/api/words/random?level=${level}`)
       .then((response) => {
         setWord(response.data);
+        setIsLoading(false);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.log(error);
+        setIsLoading(false);
+      });
   };
 
   return (
@@ -87,7 +98,7 @@ const RandomJapaneseWord = () => {
                 onClick={handleLevelSelect}
                 className="font-bold py-2 px-4 rounded"
               >
-                Choose Level
+                {isLoading ? "Loading..." : "Choose Level"}
               </button>
             )}
           </div>
