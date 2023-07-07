@@ -1,7 +1,3 @@
-# JLPT Word Generator
-
-This is a simple JLPT Word Generator built with React, Vite, and TailwindCSS. The application fetches random Japanese words from the JLPT (Japanese Language Proficiency Test) API, which includes the word in kanji, furigana reading, meaning, and JLPT level. A "Generate New Word" button is also included to generate a new random word on demand.
-
 ## Installation
 
 To install and run this application locally, follow these steps:
@@ -15,17 +11,3 @@ To install and run this application locally, follow these steps:
 ## API
 
 This application uses the JLPT vocabulary API provided by [wkei/jlpt-vocab-api](https://github.com/wkei/jlpt-vocab-api). Please refer to the API documentation for more information about the available endpoints and query parameters.
-
-## Contributing
-
-Contributions are welcome! To contribute to this project, please follow these steps:
-
-1. Fork this repository.
-2. Create a new branch with your changes using `git checkout -b my-new-branch`.
-3. Make your changes and commit them using `git commit -m "Add some feature"`.
-4. Push your changes to your fork using `git push origin my-new-branch`.
-5. Create a new pull request and describe your changes.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
