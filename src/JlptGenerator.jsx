@@ -63,7 +63,7 @@ const RandomJapaneseWord = () => {
                 onClick={handleLevelSelect}
                 className="font-bold py-2 px-4 rounded"
               >
-                Choose Level
+                Select Level
               </button>
               <button
                 onClick={handleNewWordClick}
@@ -98,7 +98,7 @@ const RandomJapaneseWord = () => {
                 onClick={handleLevelSelect}
                 className="font-bold py-2 px-4 rounded"
               >
-                {isLoading ? "Loading..." : "Choose Level"}
+                {isLoading ? "Loading..." : "Select Level"}
               </button>
             )}
           </div>
